@@ -1,0 +1,13 @@
+.topPhotographers{
+    text-align: center;
+}
+
+.cardSection{
+    display: flex;
+    justify-content: center;
+}
+
+
+.card{
+    padding: 30px;
+}

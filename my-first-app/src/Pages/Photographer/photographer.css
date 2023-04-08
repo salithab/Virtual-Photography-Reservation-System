@@ -1,0 +1,52 @@
+.profile{
+    /* display: flex; */
+    height: 700px;
+    width: 100%;
+}
+
+.upper{
+    background-color: white;
+    border-bottom: 2px solid black;
+    display: flex;
+    /* margin: 5px; */
+    /* margin-top: 20px; */
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+}
+
+.upper h3{
+    margin: 10px 60px;
+    color: rgb(136, 136, 136);
+}
+
+
+.pName {
+    display: flex;
+    margin-left: 50px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.pName h6{
+    color: rgb(141, 141, 141);
+    margin-left: 10px
+    
+}
+
+
+.about{
+    display: flex;
+    width: 40%;
+    margin-left: 200px;
+    margin-top: 30px;
+    background-color: rgb(184, 184, 184);
+    padding: 50px;
+    border-radius: 100px;
+}
+
+.about .pimg{
+    height: 20px;
+    width: 20%;
+    size: 20%;
+}

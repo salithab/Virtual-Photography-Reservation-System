@@ -1,0 +1,23 @@
+.header{
+    size: 5px;
+    position: relative;
+
+}
+
+img{
+    height: calc(100vh - 50px);
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.picText{
+    position: absolute;
+    bottom: 160px;
+    left: 760px;
+    font-weight: 710;
+    font-size: 230%;
+    color: rgb(0, 0, 0);
+}
+
+

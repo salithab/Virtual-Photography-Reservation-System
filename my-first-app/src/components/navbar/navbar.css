@@ -1,0 +1,88 @@
+.navbar{
+    height: 50px;
+    background-color: #FFD392;
+    display: flex;
+    justify-content: center;
+}
+
+.navContainer{
+    width: 80%;
+    max-width: 1024px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: auto;
+    height: 70px;
+    font-weight: 500;
+}
+
+.navButton{
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: #F88748;
+    font-weight: 700;
+    border-radius: 5px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+    
+}
+
+.mainItems{
+    display: flex;
+    align-items: center;
+}
+
+.mainItems ul{
+    display: flex;
+    list-style-type: none;
+    padding: 5px;
+}
+
+.mainItems ul li{
+    padding: 10px;
+    
+}
+
+
+
+.routs{
+    margin-right: 10px;
+    color: black;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.mainCompo:hover{
+    align-items: center;
+    background: rgb(221, 112, 69);
+    border-radius: 4px;
+    transition: all 0.2s else-in-out;
+    
+}
+
+
+.searchBar{
+    display: flex;
+    border-radius: 30px;
+    padding: 80px;  
+    list-style-type: none;
+}
+
+.searchBar li{
+    margin-right: 10px;
+    font-weight: 700;
+}
+
+.mainCompo{
+    background: transparent;
+    font-weight: 700;
+    border: 0;
+    font-size: 16px;
+}

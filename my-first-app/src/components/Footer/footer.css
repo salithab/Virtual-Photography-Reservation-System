@@ -1,0 +1,71 @@
+.footer{
+    height: 300px;
+    background-color: #5E2727;
+    position: relative;
+   
+}
+
+
+ .footerContainer{
+    display: flex; 
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+.helpList{
+    color: white;
+}
+
+.helpList ul{
+    list-style-type: none;
+    padding: 5px;
+    font-size: small;
+    line-height: 30px;
+}
+
+
+
+
+.companyList{
+    color: white;
+
+}
+
+.companyList ul{
+    list-style-type: none;
+    padding: 5px;
+    font-size: small;
+    line-height: 30px;
+
+}
+
+
+.socialLogo{
+    max-height: 100px;
+    
+}
+
+.socialMedia{
+    text-align: center;
+}
+
+.socialMedia h4{
+    color: white;
+
+}
+
+
+
+
+.cpt{
+    color: white;
+    font-weight: lighter;
+    font-size: smaller;
+    text-align: center;
+}
+
+.footerContainer logo{
+    height: 110px;
+}
