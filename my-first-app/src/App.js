@@ -3,6 +3,7 @@ import Home from "./Pages/Home/Home";
 import SignUp from "./Pages/SignUp/signup";
 import Login from "./Pages/Login/login";
 import Photographer from "./Pages/Photographer/photographer";
+import PackageList from "./Pages/PackageList/packageList";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="signup" element={<SignUp />} />
         <Route path="login" element={<Login />}/>
         <Route path="photographer" element={<Photographer/>}/>
+        <Route path="packageList" element={<PackageList/>}/>
         {/* <Route path="login" element={<SignUp />} /> */}
       </Routes>
       <Footer/>

@@ -1,14 +1,33 @@
 import "./card.css"
 
-function Card({title,image,body}) {
+// import {Navigate, useNavigate, userNavigate} from "react-router-dom";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import { useNavigate } from "react-router-dom";
+// import Photographer from "../Pages/Photographer/photographer"
+// import { Route, Router } from "react-router-dom"
+
+function Card({title,image,body,bimage}) {
+
+  const navigate = useNavigate()
+
   return (
+
+
     <div>
         <div className="cardContainer">
 
             <div className="upprecontainer">
+
+              {/* <div className="cover">
+                  <img src={bimage} alt="" />
+              </div> */}
+
               <div className="imageContainer">
-                  <img src={image} alt="" />
+                  <img className="propic" src={image} alt="" />
               </div>
+
+
             </div>         
 
             <br /><br />
@@ -25,10 +44,11 @@ function Card({title,image,body}) {
             
 
             <div className="btn">
-              <button>
+              <button onClick={()=>navigate("./photographer")} className="viewbtn">
                 <a>
                   view more
                 </a>
+
               </button>
             </div>
 

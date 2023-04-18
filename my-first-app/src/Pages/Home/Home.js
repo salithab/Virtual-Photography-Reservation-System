@@ -19,7 +19,7 @@ const Home = () => {
       <div className="cardSection">
         <div className="card">
           <Card
-            bimage="../images/wick.jpg"
+            bimage="../images/loginback.jpg"
             title="ROBERT FRANK"
             image="../images/robert.jpg"
             body="I am a professional Wedding and Family Photographer with over 8 years of experience retouching & post-processing images from many different Genres like Weddings, Baptism and others."

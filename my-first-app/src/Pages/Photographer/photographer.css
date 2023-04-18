@@ -1,105 +1,164 @@
-.profile{
-    /* display: flex; */
-    height: 700px;
-    width: 100%;
+.profile {
+  height: 900px;
+  width: 100%;
 }
 
-.upper{
-    background-color: white;
-    border-bottom: 2px solid black;
-    display: flex;
-    /* margin: 5px; */
-    /* margin-top: 20px; */
-    align-items: flex-start;
-    justify-content: flex-start;
-    
+.upper {
+  background-color: white;
+  border-bottom: 2px solid black;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
-.upper h3{
-    margin: 10px 60px;
-    color: rgb(136, 136, 136);
+.upper h3 {
+  margin: 10px 60px;
+  color: rgb(136, 136, 136);
 }
-
 
 .pName {
-    display: flex;
-    margin-left: 50px;
-    margin-top: 20px;
-    align-items: center;
+  display: flex;
+  margin-left: 50px;
+  margin-top: 20px;
+  align-items: center;
 }
 
-.pName h6{
-    color: rgb(141, 141, 141);
-    margin-left: 10px
-    
+.pName h6 {
+  color: rgb(141, 141, 141);
+  margin-left: 10px;
 }
 
-
-.about{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 500px;
-    height: 180px;
-    margin-left: 200px;
-    margin-top: 30px;
-    background-color: rgb(184, 184, 184);
-    border-radius: 100px;
-    
-
-}
-.profilePhoto{
-    height: 180px;
-    width: 180px;
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 600px;
+  height: 200px;
+  margin-left: 100px;
+  margin-top: 60px;
+  background-color: rgb(184, 184, 184);
+  border-radius: 100px;
 }
 
-.pimg{
-    height: 100%;
-    width: 100%;
-    border-radius: 100px;
+.profilePhoto {
+  height: 200px;
+  width: 200px;
 }
 
-.description{
-    display: flex;
-    padding-left: 20px;
-    width: 300px;
-    justify-content: center;
-    align-items: center;
-}
-
-.protoCollection{
+.pimg {
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
 
 }
 
-.profileHead{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-left: 50px;
-    padding-right: 50px;
+.description {
+  display: flex;
+  padding-left: 20px;
+  width: 400px;
+  justify-content: center;
+  align-items: center;
 }
 
-.photoCollection{
-    display: flex;
-    flex-wrap: wrap;
-    width: 250px;
-    justify-content: center;
-    align-items: center;
+/* .photoCollection{
+
+} */
+
+.profileHead {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  /* flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start; */
+  /* padding-left: 50px;
+  padding-right: 50px; */
 }
 
-.collectionRow{
-    display: flex;
+.photoCollection {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
 }
 
-.mainImg{
-    width: 400px;
-    height: 100px;
-    padding: 5px;
+.collectionRow {
+  display: flex;
 }
 
-.secImg{
-    width: 200px;
-    height: 100px;
-    padding: 5px;
+.mainImg {
+  width: 300px;
+  height: 160px;
+  padding: 5px;
+}
+
+.secImg {
+  width: 150px;
+  height: 250px;
+  padding: 5px;
+}
+
+
+
+
+.reviews{
+  margin-left: 20px;
+  padding-top: 30px;
+}
+
+
+.imgname{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+
+.propic{
+  height: 40px;
+  width: 40px;
+}
+
+.rname{
+  margin-left: 10px;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+
+.comment{
+  width: 600px;
+  margin-top: 20px;
+  margin-left: 68px;
+}
+
+
+.packbtn{
+  margin-top: 30px;
+}
+
+
+.choosepack{
+  color: rgb(255, 255, 255);
+  background-color: rgb(235, 148, 67);
+  height: 30px;
+  width: 290px;
+  margin-top: 10px;
+  border: 0px;
+  cursor: pointer;
+}
+
+
+.picbtn{
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  /* width: 100px; */
+  align-items: center;
 }
