@@ -49,7 +49,6 @@
   height: 100%;
   width: 100%;
   border-radius: 100px;
-
 }
 
 .description {
@@ -101,16 +100,12 @@
   padding: 5px;
 }
 
-
-
-
-.reviews{
+.reviews {
   margin-left: 20px;
   padding-top: 30px;
 }
 
-
-.imgname{
+.imgname {
   height: 100%;
   width: 100%;
   display: flex;
@@ -118,35 +113,31 @@
   margin-left: 20px;
 }
 
-
-.propic{
+.propic {
   height: 40px;
   width: 40px;
 }
 
-.rname{
+.rname {
   margin-left: 10px;
   align-items: center;
   justify-content: center;
   color: black;
 }
 
-
-.comment{
+.comment {
   width: 600px;
   margin-top: 20px;
   margin-left: 68px;
 }
 
-
-.packbtn{
+.packbtn {
   margin-top: 30px;
 }
 
-
-.choosepack{
+.choosepack {
   color: rgb(255, 255, 255);
-  background-color: rgb(235, 148, 67);
+  background-color: #f88748;
   height: 30px;
   width: 290px;
   margin-top: 10px;
@@ -154,11 +145,24 @@
   cursor: pointer;
 }
 
-
-.picbtn{
+.picbtn {
   display: flex;
   flex-direction: column;
   height: 500px;
   /* width: 100px; */
   align-items: center;
+}
+
+.avabtn {
+  border: none;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: #f88748;
+  font-weight: 700;
+  border-radius: 20px;
+  height: 50px;
+  width: 300px;
+  margin-left: 150px;
+  margin-right: 10px;
+  margin-top: 100px;
 }

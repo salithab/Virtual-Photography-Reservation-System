@@ -1,7 +1,7 @@
-import React from "react";
-import "./photographer.css";
+import React from 'react';
+import './photographer.css';
 
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 const Photographer = () => {
   const navigate = useNavigate();
@@ -30,6 +30,12 @@ const Photographer = () => {
             of experience retouching & postprocessing images from manydifferent
             Genres like Weddings, Baptism and others
           </div>
+
+          <div className="avalabilty">
+            <button onClick={() => navigate('/avacheck')} className="avabtn">
+              Check Availability
+            </button>
+          </div>
         </div>
 
         <div className="picbtn">
@@ -50,7 +56,10 @@ const Photographer = () => {
           </div>
 
           <div className="packbtn">
-            <button onClick={() => navigate("/packageList")} className="choosepack">
+            <button
+              onClick={() => navigate('/packageList')}
+              className="choosepack"
+            >
               Choose Package
             </button>
           </div>

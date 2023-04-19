@@ -1,0 +1,54 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 1200px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(138, 138, 138);
+  padding: 10px;
+  margin: 20px;
+  border-radius: 50px;
+}
+
+.fill {
+  display: flex;
+  /* padding: 30px;
+  margin: 40px; */
+}
+
+.allitems {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 500px;
+  align-items: center;
+}
+
+.booking {
+  display: flex;
+  justify-content: center;
+}
+
+.ckeckbtn {
+  margin-top: 50px;
+}
+
+.inp {
+  display: flex;
+  margin: 20px;
+}
+
+.ckeckbtn {
+  border: none;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  background-color: #f88748;
+  font-weight: 700;
+  border-radius: 5px;
+  height: 30px;
+  width: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+}

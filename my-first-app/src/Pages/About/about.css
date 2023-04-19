@@ -1,0 +1,50 @@
+.fulls {
+  /* width: 1300px; */
+  height: 1200px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.abd {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px;
+  width: 700px;
+}
+
+.whychose {
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+}
+
+.abot {
+  margin-top: 40px;
+}
+
+.welcomenote {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  width: 800px;
+}
+
+.des {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.thank {
+  margin-top: 50px;
+  width: 600px;
+  text-align: center;
+}
+
+.abd h2 {
+  color: rgb(237, 136, 22);
+}
