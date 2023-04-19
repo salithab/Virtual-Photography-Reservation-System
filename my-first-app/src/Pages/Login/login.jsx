@@ -1,15 +1,52 @@
-import { Navbar } from 'react-bootstrap';
-
-import React, { useState } from 'react';
-import './login.css';
+import { Navbar } from "react-bootstrap";
+import { useFormik } from "formik";
+import * as yup from "yup";
+import "./login.css";
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { Form, Button } from 'react-bootstrap';
+import { login } from '../../redux/apiCalls';
+import { useDispatch, useSelector } from 'react-redux';
+import axios from "axios";
 
 const Login = () => {
-  const [popupStyle, showPopup] = useState('hide');
+  const { isFetching, error, currentUser } = useSelector((state) => state.user);
+  const [popupStyle, showPopup] = useState("hide");
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
 
+  useEffect(() => {
+    if (currentUser) {
+      navigate("/")
+    }
+  });
   const popup = () => {
-    showPopup('loginpopup');
-    setTimeout(() => showPopup('hide'), 3000);
+    showPopup("loginpopup");
+    setTimeout(() => showPopup("hide"), 3000);
   };
+
+  const formik = useFormik({
+    initialValues: {
+      email: "",
+      password: "",
+    },
+    validationSchema: yup.object({
+      email: yup.string().email("Invalid email").required("Email is required"),
+      password: yup.string().required("password is required")
+    }),
+    onSubmit: async (values) => {
+
+      login(dispatch, { ...values });
+      if(currentUser){
+        navigate("/");
+      }
+      else{
+        popup()
+      }
+    },
+  });
+
+  
 
   return (
     <div className="page">
@@ -17,17 +54,36 @@ const Login = () => {
 
       <div className="welcome">
         <h1>WELCOME !</h1>
-        <p>You can log in to your existing account</p>
+        <p>You can log in to ypor existing account</p>
       </div>
 
       <div className="cover">
         <h1>Login</h1>
-        <input type="text" placeholder="username" />
-        <input type="password" placeholder="password" />
-
-        <div className="loginbtn" onClick={popup}>
-          Login
-        </div>
+        <Form onSubmit={formik.handleSubmit} className="px-5 signinForm">
+          <Form.Group>
+            <Form.Control
+              className="input"
+              placeholder="E-mail"
+              type="email"
+              name="email"
+              value={formik.values.email}
+              onChange={formik.handleChange}
+            />
+          </Form.Group>
+          <Form.Group>
+            <Form.Control
+              className="input"
+              placeholder="Password"
+              type="password"
+              name="password"
+              value={formik.values.password}
+              onChange={formik.handleChange}
+            />
+          </Form.Group>
+          <Button type="submit" className="loginbtn" disabled={false}>
+            LOG IN
+          </Button>
+        </Form>
 
         <p className="text">Or loging using</p>
 

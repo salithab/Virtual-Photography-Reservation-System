@@ -13,17 +13,20 @@ import lombok.*;
 @Table(name = "customer")
 public class Customer {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="customerId",length = 45)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int customerId;
-    @Column(name = "name")
+    @Column(name = "name", length = 225)
     private String name;
-    @Column(name = "email")
+    @Column(name = "email", length = 225)
     private String email;
-    @Column(name = "tel")
+    @Column(name = "tel", length = 225)
     private String tel;
-    @Column(name = "street")
+    @Column(name = "street", length = 225)
     private String street;
-    @Column(name = "city")
+    @Column(name = "city",  length = 225)
     private String city;
+    @Column(name = "password",  length = 225)
+    private String password;
 
 }

@@ -1,7 +1,10 @@
-import './navbar.css';
-import { Link } from 'react-router-dom';
+import { useSelector } from "react-redux";
+import "./navbar.css";
+import { Link } from "react-router-dom";
 
-const navbar = () => {
+const Navbar = () => {
+  const { currentUser } = useSelector((state) => state.user);
+
   return (
     <div className="navbar">
       <div className="navContainer">
@@ -15,13 +18,13 @@ const navbar = () => {
 
           <div className="routs">
             <ul>
-              <Link to={'/'}>
+              <Link to={"/"}>
                 <button className="mainCompo">
                   <li>Home</li>
                 </button>
               </Link>
 
-              <Link to={'/signup'}>
+              <Link to={"/signup"}>
                 <button className="abt">
                   <li>Book Now</li>
                 </button>
@@ -29,7 +32,7 @@ const navbar = () => {
               {/* <li>Book Now</li> */}
               <li>Create ad</li>
 
-              <Link to={'/about'}>
+              <Link to={"/about"}>
                 <button className="abt">
                   <li>About</li>
                 </button>
@@ -39,17 +42,23 @@ const navbar = () => {
             </ul>
           </div>
 
-          <Link to={'/signup'}>
-            <button className="navButton">Sign up</button>
-          </Link>
+          {currentUser ? (
+            <button className="navButton">Sign out</button>
+          ) : (
+            <>
+              <Link to={"/signup"}>
+                <button className="navButton">Sign up</button>
+              </Link>
 
-          <Link to={'/login'}>
-            <button className="navButton">Login</button>
-          </Link>
+              <Link to={"/login"}>
+                <button className="navButton">Login</button>
+              </Link>
+            </>
+          )}
         </div>
       </div>
     </div>
   );
 };
 
-export default navbar;
+export default Navbar;

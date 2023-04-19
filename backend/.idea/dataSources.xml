@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="Photography_Reservation_System@localhost" uuid="759cc3bb-5239-4d74-bdbe-c6341b5f5db7">
-      <driver-ref>mysql.8</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/Photography_Reservation_System</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
     <data-source source="LOCAL" name="springboot-backend/Hibernate" uuid="1dc6cbef-9c8a-4212-a6b8-07dfbcfb2a99">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
@@ -15,6 +8,13 @@
       <remarks>Hibernate</remarks>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/Photography_Reservation_System?useSSL=false</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="Photography_Reservation_System@localhost" uuid="98d21506-ef64-4a48-8bcc-4cbe1f725887">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/Photography_Reservation_System</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
